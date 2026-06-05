@@ -1,0 +1,12 @@
+{
+  "name": "moledrop",
+  "version": "0.1.0",
+  "description": "Underground delivery network simulation using Dijkstra routing",
+  "main": "simulation.js",
+  "scripts": {
+    "start": "node simulation.js"
+  },
+  "keywords": ["logistics", "simulation", "dijkstra", "delivery"],
+  "author": "Dharavath Satvik",
+  "license": "MIT"
+}
