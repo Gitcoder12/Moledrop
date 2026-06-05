@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "city": "Hyderabad",
+  "hubs": [
+    { "id": "H-A", "name": "Ameerpet Hub", "lat": 17.4374, "lng": 78.4487, "type": "central", "capacity_kg": 500, "active": true },
+    { "id": "H-B", "name": "Hitech City Hub", "lat": 17.4486, "lng": 78.3762, "type": "terminal", "capacity_kg": 300, "active": true },
+    { "id": "H-C", "name": "Secunderabad Hub", "lat": 17.4399, "lng": 78.4983, "type": "terminal", "capacity_kg": 300, "active": true },
+    { "id": "H-D", "name": "Mehdipatnam Hub", "lat": 17.3944, "lng": 78.4394, "type": "terminal", "capacity_kg": 200, "active": true },
+    { "id": "H-E", "name": "LB Nagar Hub", "lat": 17.3491, "lng": 78.5525, "type": "terminal", "capacity_kg": 200, "active": false }
+  ],
+  "routes": [
+    { "from": "H-A", "to": "H-B", "distance_km": 8.2, "tunnel_type": "pneumatic", "avg_time_min": 4 },
+    { "from": "H-A", "to": "H-C", "distance_km": 6.5, "tunnel_type": "pneumatic", "avg_time_min": 3 },
+    { "from": "H-A", "to": "H-D", "distance_km": 5.1, "tunnel_type": "pneumatic", "avg_time_min": 2.5 },
+    { "from": "H-A", "to": "H-E", "distance_km": 14.0, "tunnel_type": "pneumatic", "avg_time_min": 7 }
+  ],
+  "payload_types": ["food", "medicine", "documents", "small_parcels"],
+  "max_payload_kg": 15
+}
