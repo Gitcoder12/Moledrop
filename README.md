@@ -2,7 +2,7 @@
 
 **A Node.js route-planning simulation for a hypothetical underground delivery hub network.**
 
-[![License](https://img.shields.io/badge/license-see%20LICENSE-lightgrey)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Moledrop models hubs and tunnel links as a weighted graph and uses Dijkstra's algorithm to find a route with the lowest total travel time.
 
@@ -12,7 +12,7 @@ Moledrop models hubs and tunnel links as a weighted graph and uses Dijkstra's al
 - Exclude inactive hubs from route planning.
 - Build an undirected weighted graph from active routes.
 - Calculate a shortest-time path between two hub IDs.
-- Print a sample route when the script runs.
+- Return an empty result when no active route connects the requested hubs.
 
 ## Quick Start
 
@@ -24,25 +24,41 @@ cd Moledrop
 npm start
 ```
 
-The script prints the sample route from `H-B` to `H-D`.
+The sample run calculates the route from `H-B` to `H-D`:
+
+```text
+H-B → H-A → H-D
+Estimated time: 6.5 min
+```
+
+## Run Tests
+
+```bash
+npm test
+npm run check
+```
+
+The tests cover the sample shortest path, disconnected hubs, and a route where the start and end are the same node.
 
 ## Tech Stack
 
-JavaScript · Node.js · JSON · Dijkstra's shortest-path algorithm
+JavaScript · Node.js · JSON · Dijkstra's shortest-path algorithm · Node.js built-in test runner
 
 ## Project Structure
 
 ```text
 Moledrop/
-├── simulation.js # Graph construction and route search
-├── hubs.json     # Sample Hyderabad hub and route records
-└── package.json  # Start script
+├── simulation.js        # Graph construction and route search
+├── hubs.json            # Sample Hyderabad hub and route records
+├── tests/
+│   └── simulation.test.js
+└── package.json         # Start, test, and syntax-check scripts
 ```
 
 ## Scope and Limitations
 
-This is a graph simulation, not a real pneumatic delivery network. Hub coordinates, capacities, route distances, and travel times are sample data. The current route function is designed for the bundled network and is not a live logistics or safety system.
+This is a graph simulation, not a real pneumatic delivery network. Hub coordinates, capacities, route distances, and travel times are sample data. The estimated times are values from the supplied graph, not measured logistics performance.
 
 ## License
 
-See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE).
