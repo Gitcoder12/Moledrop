@@ -71,3 +71,17 @@ MIT. See [LICENSE](LICENSE).
 - [Company and team fit](COMPANY_FIT.md) · [README explanation draft](README_ADDENDUM_DRAFT.md)
 - [README quality checklist](README_QUALITY_CHECKLIST.md)
 - [Contributing](CONTRIBUTING.md) · [Agent instructions](AGENTS.md) · [Agent skills](SKILLS.md)
+
+## Understanding the project
+
+### In plain language
+
+A route-planning simulation for a made-up underground delivery network. It finds a low-travel-time path between hubs.
+
+### Technical and research view
+
+Node.js graph prototype. Hub records and weighted tunnel links are loaded into an undirected graph; inactive hubs/routes are excluded; Dijkstra's algorithm selects a shortest-time route. It is a hypothetical simulation, not a live transport or robotics routing system.
+
+Document the graph representation, weighting assumptions, Dijkstra implementation, tie-breaking and no-route behavior. Include sample input and exact output.
+
+See [FEATURE_UPGRADE_PLAN.md](FEATURE_UPGRADE_PLAN.md), [ACTIVITY_LOG.md](ACTIVITY_LOG.md), [COMPANY_FIT.md](COMPANY_FIT.md) and [CONTRIBUTING.md](CONTRIBUTING.md) for further technical and collaboration detail.
