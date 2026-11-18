@@ -29,3 +29,10 @@ This section supplements the maintainer-authored README above. The original text
 3. Keep all sample-network outputs clearly labelled as simulation estimates.
 
 **Verification status:** static inspection only; `npm test` and `npm run check` have not been run in this audit.
+
+---
+
+## Examples Used
+- Finding the fastest delivery path through connected hubs
+- Comparing alternative routes when a hub is unavailable
+- Testing shortest-path behavior on a disconnected network
