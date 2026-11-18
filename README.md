@@ -29,3 +29,23 @@ This section supplements the maintainer-authored README above. The original text
 3. Keep all sample-network outputs clearly labelled as simulation estimates.
 
 **Verification status:** static inspection only; `npm test` and `npm run check` have not been run in this audit.
+
+
+---
+
+## Branch Activity & Development History
+
+**Audit date:** 2026-11-18 · **Comparison base:** `main`
+
+| Branch | Difference from `main` | Observed work / changed paths |
+|---|---:|---|
+| `docs/portfolio-operating-kit-2026-11-13` | 4 ahead / 3 behind | Activity log, agent guidance, company-fit notes, feature plan, README support docs and skills; README has removals as well as additions on this branch |
+| `docs/project-status-audit20261116` | Comparison unavailable | GitHub returned 404 for the comparison; recheck branch existence |
+| `docs/status-inventory-2026-11-16-v1` | 1 / 1 | Project status inventory: `PROJECT_STATUS.md` |
+
+### Open pull requests observed during this audit
+
+- [PR #3 — project status snapshot](https://github.com/Gitcoder12/Moledrop/pull/3)
+- [PR #2 — project status snapshot](https://github.com/Gitcoder12/Moledrop/pull/2)
+
+**Review note:** The portfolio branch includes README removals as well as additions. Review that diff carefully; this audit does not alter or overwrite it. No branches have been merged or deleted by this documentation update.
