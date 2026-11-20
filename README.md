@@ -1,5 +1,24 @@
 # Moledrop
 
+## Run the simulation locally
+
+Moledrop currently runs as a Node.js command-line simulation; this repository does not provide a browser website to open.
+
+```bash
+git clone https://github.com/Gitcoder12/Moledrop.git
+cd Moledrop
+npm start
+```
+
+Run the automated checks:
+
+```bash
+npm test
+npm run check
+```
+
+---
+
 ---
 
 ## AI-maintained project notes (secondary — 2026-11-13)
